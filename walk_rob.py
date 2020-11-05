@@ -1,7 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as pb
 
-class Traverser:
+class Move:
 
     def __init__(self):
         self.end_search = False
@@ -95,13 +95,13 @@ for k, l in P.items():
 
 print(G["Sports Complex"]["Siwaka"]["weight"])
 
-t1 = Traverser()
+t1 = Move()
 print('Greedy Breadth First Search:')
 print(t1.greedy(G, "Sports Complex", "Parking Lot"))
 print('\nEnd')
 
 
-t2 = Traverser()
+t2 = Move()
 print('Uniform Cost Search:')
 print(t2.ucs(G, "Sports Complex", "Parking Lot"))
 print('\nEnd')
